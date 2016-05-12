@@ -1,10 +1,12 @@
 
 enablePlugins(DebianPlugin)
-enablePlugins(DockerPlugin)
+enablePlugins(JavaAppPackaging)
 
 name := "atlas-demo"
 version := "1.0"
 scalaVersion := Dependencies.Versions.scala
+
+externalResolvers += Resolver.jcenterRepo
 
 maintainer := "Brian Harrington <brharrington@gmail.com>"
 packageSummary := "Atlas packaging example."
