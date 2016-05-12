@@ -15,7 +15,7 @@ packageDescription := """Example for how to create a package based on
 
 mainClass in Compile := Some("com.netflix.atlas.standalone.Main")
 
-dockerExposedPorts in Docker := Seq(7101, 7500, 8077)
+dockerExposedPorts := Seq(7101, 7500, 8077)
 
 libraryDependencies ++= Seq(
   Dependencies.atlasStandalone,
