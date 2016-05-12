@@ -1,5 +1,6 @@
 
 enablePlugins(DebianPlugin)
+enablePlugins(DockerPlugin)
 
 name := "atlas-demo"
 version := "1.0"
