@@ -13,6 +13,8 @@ packageSummary := "Atlas packaging example."
 packageDescription := """Example for how to create a package based on
   the Atlas jars."""
 
+dockerExposedPorts in Docker := Seq(7101, 7500, 8077)
+
 libraryDependencies ++= Seq(
   Dependencies.atlasStandalone,
   Dependencies.iepModAdmin,
